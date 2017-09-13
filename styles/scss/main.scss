@@ -1,0 +1,219 @@
+@import '../fonts/fonts.min.css';
+
+$white: #fff;
+$black: #000;
+$red: #ed0a28;
+$blue-gray: #343e48;
+$light-blue: #00a5c2;
+
+
+body {
+    width: 100%;
+    font-family: 'Proxima Nova', Georgia, sans-serif;
+    .container-full {
+        margin: 0 auto;
+        width: 100%;
+    }
+}
+
+.navbar {
+    background-color: $black;
+    margin-bottom: 0;
+    border: none;
+
+    .navbar-brand {
+        display: block;
+        line-height: 100px;
+        height: 100px;
+        text-align: center;
+
+        img {
+            display: inline-block;
+            vertical-align: baseline;
+        }
+    }
+
+    .open > a {
+        background-color: transparent;
+        &:active,
+        &:focus,
+        &:hover {
+            background-color: transparent;
+        }
+    }
+
+    .navbar-nav {
+        background-color: $black;
+        line-height: 100px;
+
+        li {
+            float: none;
+            display: inline-block;
+            text-align: center;
+
+            &:active,
+            &:focus,
+            &:hover {
+                background-color: transparent;
+            }
+
+            a {
+                text-transform: uppercase;
+                color: $white;
+
+                &:hover {
+                    color: $light-blue;
+                    background-color: transparent;
+                }
+                .caret{
+                  color: $white;
+                }
+            }
+
+            button {
+                text-transform: uppercase;
+            }
+        }
+
+        .dropdown-menu {
+            background-color: $black;
+            // background:rgba(255,255,255,0.5);
+            opacity: 0.8;
+            padding: 0;
+
+            li {
+                color: $white;
+                display: inline;
+                text-align: left;
+
+                a {}
+            }
+        }
+    }
+}
+
+.btn {
+    &.btn-black {
+        height: 60px;
+        width: 230px;
+        background-color: $black;
+        border: 2px solid $light-blue;
+        color: $white;
+        margin-right: 30px;
+        border-radius: 0;
+
+        &:active,
+        &:focus,
+        &:hover {
+            background-color: $black;
+            color: $white;
+        }
+    }
+
+    &.btn-red {
+        height: 60px;
+        width: 230px;
+        background-color: $red;
+        border: none;
+        color: $white;
+        border-radius: 0;
+
+        &:active,
+        &:focus,
+        &:hover {
+            background-color: $red;
+            color: $white;
+        }
+    }
+}
+
+.img360 {
+    background: $black;
+    position: relative;
+
+    .icon-360 {
+        // background-repeat: no-repeat;
+        // background: url('../../img/360-icon.png');
+        // width: 175px;
+        // height: 165px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 10%;
+    }
+}
+
+.filter-list {
+    background-color: $blue-gray;
+    padding: 55px 0;
+    text-align: center;
+
+    label {
+        color: $white;
+        font-weight: normal;
+        padding: 0 15px;
+    }
+
+    a {
+        display: inline-block;
+        text-transform: uppercase;
+        color: $white;
+        vertical-align: middle;
+        min-width: 100px;
+        width: 20%;
+        max-width: 280px;
+        height: 60px;
+        margin: 0 15px;
+        border: 1px solid $white;
+        line-height: 60px;
+        font-weight: bold;
+
+        &:hover {
+            text-decoration: none;
+            background-color: $white;
+            color: $blue-gray;
+        }
+    }
+}
+
+.tiles-list {
+    .tile-item {
+        position: relative;
+        width: 50%;
+        display: inline-block;
+        float: left;
+        background-color: $black;
+        min-height: 1px;
+
+        .tile-icon {
+            position: absolute;
+            top: 20px;
+            right: 40px;
+            max-width: 100px;
+        }
+
+        .tile-info {
+            position: absolute;
+            bottom: 0;
+            left: 30px;
+
+            .tile-header {
+                font-size: 48px;
+                color: $white;
+                margin: 0;
+            }
+
+            .tile-description {
+                font-size: 28px;
+                color: $white;
+                margin: 0;
+            }
+
+            .tile-text {
+                font-size: 28px;
+                color: $white;
+                margin: 0;
+            }
+        }
+    }
+}
